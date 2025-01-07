@@ -1,6 +1,10 @@
 # linux-mint-themes-snap
 A Snap that allows you to use various themes used by Linux Mint in Snap applications.
 
+<a href="https://snapcraft.io/linux-mint-themes">
+    <img alt="Get it from the Snap Store" src=https://snapcraft.io/en/dark/install.svg />
+  </a>
+
 Unfortunately, you still need to use this command to theme installed Snap apps.
 And reuse them when installing new Snap apps.
 
@@ -11,5 +15,3 @@ I tried adding the icons used by Linux Mint, but they don't work very well, so I
 https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 
 https://snapcraft.io/icon-theme-papirus
-
-To make it easier for anyone using Snap on Linux Mint, I also added the Snap installation to the script, if it hasn't already been done, as well as the installation of the Snap Store and the Snap version of the Papirus icons.

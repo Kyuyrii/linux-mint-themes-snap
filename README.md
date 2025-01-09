@@ -7,6 +7,4 @@ A Snap that allows you to use various themes used by Linux Mint in Snap applicat
 
 I tried adding the icons used by Linux Mint, but they don't work very well, so I recommend using the Papirus icons:
 
-https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
-
 https://snapcraft.io/icon-theme-papirus

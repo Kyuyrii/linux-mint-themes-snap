@@ -1,0 +1,234 @@
+name: linux-mint-themes
+base: core24
+version: '22.1'
+platforms:
+  all:
+    build-on: [amd64]
+    build-for: [all]
+summary: Themes used by Linux Mint.
+description: |
+  A Snap that allows you to use various themes used by Linux Mint in Snap applications.
+grade: stable
+confinement: strict
+
+slots:
+  icon-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/icons/Bibata-Modern-Classic
+        - $SNAP/share/icons/Bibata-Modern-Ice
+        - $SNAP/share/icons/Bibata-Original-Classic
+        - $SNAP/share/icons/Bibata-Original-Ice
+        - $SNAP/share/icons/GoogleDot-Black
+        - $SNAP/share/icons/GoogleDot-White
+        - $SNAP/share/icons/Mint-L
+        - $SNAP/share/icons/Mint-L-Aqua
+        - $SNAP/share/icons/Mint-L-Blue
+        - $SNAP/share/icons/Mint-L-Brown
+        - $SNAP/share/icons/Mint-L-Grey
+        - $SNAP/share/icons/Mint-L-Orange
+        - $SNAP/share/icons/Mint-L-Pink
+        - $SNAP/share/icons/Mint-L-Purple
+        - $SNAP/share/icons/Mint-L-Red
+        - $SNAP/share/icons/Mint-L-Sand
+        - $SNAP/share/icons/Mint-L-Teal
+        - $SNAP/share/icons/Mint-L-Yellow
+        - $SNAP/share/icons/Mint-X
+        - $SNAP/share/icons/Mint-X-Aqua
+        - $SNAP/share/icons/Mint-X-Blue
+        - $SNAP/share/icons/Mint-X-Brown
+        - $SNAP/share/icons/Mint-X-Grey
+        - $SNAP/share/icons/Mint-X-Orange
+        - $SNAP/share/icons/Mint-X-Pink
+        - $SNAP/share/icons/Mint-X-Purple
+        - $SNAP/share/icons/Mint-X-Red
+        - $SNAP/share/icons/Mint-X-Sand
+        - $SNAP/share/icons/Mint-X-Teal
+        - $SNAP/share/icons/Mint-X-Yellow
+        - $SNAP/share/icons/Mint-Y
+        - $SNAP/share/icons/Mint-Y-Aqua
+        - $SNAP/share/icons/Mint-Y-Blue
+        - $SNAP/share/icons/Mint-Y-Cyan
+        - $SNAP/share/icons/Mint-Y-Grey
+        - $SNAP/share/icons/Mint-Y-Navy
+        - $SNAP/share/icons/Mint-Y-Orange
+        - $SNAP/share/icons/Mint-Y-Pink
+        - $SNAP/share/icons/Mint-Y-Purple
+        - $SNAP/share/icons/Mint-Y-Red
+        - $SNAP/share/icons/Mint-Y-Sand
+        - $SNAP/share/icons/Mint-Y-Teal
+        - $SNAP/share/icons/Mint-Y-Yaru
+        - $SNAP/share/icons/XCursor-Pro-Dark
+        - $SNAP/share/icons/XCursor-Pro-Light
+  gtk-2-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/gtk2/Mint-L
+        - $SNAP/share/gtk2/Mint-L-Aqua
+        - $SNAP/share/gtk2/Mint-L-Blue
+        - $SNAP/share/gtk2/Mint-L-Brown
+        - $SNAP/share/gtk2/Mint-L-Dark
+        - $SNAP/share/gtk2/Mint-L-Dark-Aqua
+        - $SNAP/share/gtk2/Mint-L-Dark-Blue
+        - $SNAP/share/gtk2/Mint-L-Dark-Brown
+        - $SNAP/share/gtk2/Mint-L-Darker
+        - $SNAP/share/gtk2/Mint-L-Darker-Aqua
+        - $SNAP/share/gtk2/Mint-L-Darker-Blue
+        - $SNAP/share/gtk2/Mint-L-Darker-Brown
+        - $SNAP/share/gtk2/Mint-L-Darker-Grey
+        - $SNAP/share/gtk2/Mint-L-Darker-Orange
+        - $SNAP/share/gtk2/Mint-L-Darker-Pink
+        - $SNAP/share/gtk2/Mint-L-Darker-Purple
+        - $SNAP/share/gtk2/Mint-L-Darker-Red
+        - $SNAP/share/gtk2/Mint-L-Darker-Sand
+        - $SNAP/share/gtk2/Mint-L-Darker-Teal
+        - $SNAP/share/gtk2/Mint-L-Dark-Grey
+        - $SNAP/share/gtk2/Mint-L-Dark-Orange
+        - $SNAP/share/gtk2/Mint-L-Dark-Pink
+        - $SNAP/share/gtk2/Mint-L-Dark-Purple
+        - $SNAP/share/gtk2/Mint-L-Dark-Red
+        - $SNAP/share/gtk2/Mint-L-Dark-Sand
+        - $SNAP/share/gtk2/Mint-L-Dark-Teal
+        - $SNAP/share/gtk2/Mint-L-Grey
+        - $SNAP/share/gtk2/Mint-L-Orange
+        - $SNAP/share/gtk2/Mint-L-Pink
+        - $SNAP/share/gtk2/Mint-L-Purple
+        - $SNAP/share/gtk2/Mint-L-Red
+        - $SNAP/share/gtk2/Mint-L-Sand
+        - $SNAP/share/gtk2/Mint-L-Teal
+        - $SNAP/share/gtk2/Mint-X
+        - $SNAP/share/gtk2/Mint-X-Aqua
+        - $SNAP/share/gtk2/Mint-X-Blue
+        - $SNAP/share/gtk2/Mint-X-Brown
+        - $SNAP/share/gtk2/Mint-X-Grey
+        - $SNAP/share/gtk2/Mint-X-Orange
+        - $SNAP/share/gtk2/Mint-X-Pink
+        - $SNAP/share/gtk2/Mint-X-Purple
+        - $SNAP/share/gtk2/Mint-X-Red
+        - $SNAP/share/gtk2/Mint-X-Sand
+        - $SNAP/share/gtk2/Mint-X-Teal
+        - $SNAP/share/gtk2/Mint-Y
+        - $SNAP/share/gtk2/Mint-Y-Aqua
+        - $SNAP/share/gtk2/Mint-Y-Blue
+        - $SNAP/share/gtk2/Mint-Y-Dark
+        - $SNAP/share/gtk2/Mint-Y-Dark-Aqua
+        - $SNAP/share/gtk2/Mint-Y-Dark-Blue
+        - $SNAP/share/gtk2/Mint-Y-Dark-Grey
+        - $SNAP/share/gtk2/Mint-Y-Dark-Orange
+        - $SNAP/share/gtk2/Mint-Y-Dark-Pink
+        - $SNAP/share/gtk2/Mint-Y-Dark-Purple
+        - $SNAP/share/gtk2/Mint-Y-Dark-Red
+        - $SNAP/share/gtk2/Mint-Y-Dark-Sand
+        - $SNAP/share/gtk2/Mint-Y-Dark-Teal
+        - $SNAP/share/gtk2/Mint-Y-Grey
+        - $SNAP/share/gtk2/Mint-Y-Orange
+        - $SNAP/share/gtk2/Mint-Y-Pink
+        - $SNAP/share/gtk2/Mint-Y-Purple
+        - $SNAP/share/gtk2/Mint-Y-Red
+        - $SNAP/share/gtk2/Mint-Y-Sand
+        - $SNAP/share/gtk2/Mint-Y-Teal
+  gtk-3-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/themes/Mint-L
+        - $SNAP/share/themes/Mint-L-Aqua
+        - $SNAP/share/themes/Mint-L-Blue
+        - $SNAP/share/themes/Mint-L-Brown
+        - $SNAP/share/themes/Mint-L-Dark
+        - $SNAP/share/themes/Mint-L-Dark-Aqua
+        - $SNAP/share/themes/Mint-L-Dark-Blue
+        - $SNAP/share/themes/Mint-L-Dark-Brown
+        - $SNAP/share/themes/Mint-L-Darker
+        - $SNAP/share/themes/Mint-L-Darker-Aqua
+        - $SNAP/share/themes/Mint-L-Darker-Blue
+        - $SNAP/share/themes/Mint-L-Darker-Brown
+        - $SNAP/share/themes/Mint-L-Darker-Grey
+        - $SNAP/share/themes/Mint-L-Darker-Orange
+        - $SNAP/share/themes/Mint-L-Darker-Pink
+        - $SNAP/share/themes/Mint-L-Darker-Purple
+        - $SNAP/share/themes/Mint-L-Darker-Red
+        - $SNAP/share/themes/Mint-L-Darker-Sand
+        - $SNAP/share/themes/Mint-L-Darker-Teal
+        - $SNAP/share/themes/Mint-L-Dark-Grey
+        - $SNAP/share/themes/Mint-L-Dark-Orange
+        - $SNAP/share/themes/Mint-L-Dark-Pink
+        - $SNAP/share/themes/Mint-L-Dark-Purple
+        - $SNAP/share/themes/Mint-L-Dark-Red
+        - $SNAP/share/themes/Mint-L-Dark-Sand
+        - $SNAP/share/themes/Mint-L-Dark-Teal
+        - $SNAP/share/themes/Mint-L-Grey
+        - $SNAP/share/themes/Mint-L-Orange
+        - $SNAP/share/themes/Mint-L-Pink
+        - $SNAP/share/themes/Mint-L-Purple
+        - $SNAP/share/themes/Mint-L-Red
+        - $SNAP/share/themes/Mint-L-Sand
+        - $SNAP/share/themes/Mint-L-Teal
+        - $SNAP/share/themes/Mint-X
+        - $SNAP/share/themes/Mint-X-Aqua
+        - $SNAP/share/themes/Mint-X-Blue
+        - $SNAP/share/themes/Mint-X-Brown
+        - $SNAP/share/themes/Mint-X-Grey
+        - $SNAP/share/themes/Mint-X-Orange
+        - $SNAP/share/themes/Mint-X-Pink
+        - $SNAP/share/themes/Mint-X-Purple
+        - $SNAP/share/themes/Mint-X-Red
+        - $SNAP/share/themes/Mint-X-Sand
+        - $SNAP/share/themes/Mint-X-Teal
+        - $SNAP/share/themes/Mint-Y
+        - $SNAP/share/themes/Mint-Y-Aqua
+        - $SNAP/share/themes/Mint-Y-Blue
+        - $SNAP/share/themes/Mint-Y-Dark
+        - $SNAP/share/themes/Mint-Y-Dark-Aqua
+        - $SNAP/share/themes/Mint-Y-Dark-Blue
+        - $SNAP/share/themes/Mint-Y-Dark-Grey
+        - $SNAP/share/themes/Mint-Y-Dark-Orange
+        - $SNAP/share/themes/Mint-Y-Dark-Pink
+        - $SNAP/share/themes/Mint-Y-Dark-Purple
+        - $SNAP/share/themes/Mint-Y-Dark-Red
+        - $SNAP/share/themes/Mint-Y-Dark-Sand
+        - $SNAP/share/themes/Mint-Y-Dark-Teal
+        - $SNAP/share/themes/Mint-Y-Grey
+        - $SNAP/share/themes/Mint-Y-Orange
+        - $SNAP/share/themes/Mint-Y-Pink
+        - $SNAP/share/themes/Mint-Y-Purple
+        - $SNAP/share/themes/Mint-Y-Red
+        - $SNAP/share/themes/Mint-Y-Sand
+        - $SNAP/share/themes/Mint-Y-Teal
+  
+parts:
+  icon-themes:
+    plugin: dump
+    source: https://github.com/Kyuyrii/linux-mint-themes-snap/releases/download/LMTS-22.1/LMT-22.1-snapcraft-files.tar.xz
+    override-build: |
+      snapcraftctl build
+      pwd
+      ls -l
+      mkdir -p $CRAFT_PART_INSTALL/share/icons
+      mv -f $CRAFT_PART_INSTALL/icon-themes/* $CRAFT_PART_INSTALL/share/icons
+    stage:
+      - share/icons/
+  gtk-2-themes:
+    plugin: dump
+    source: https://github.com/Kyuyrii/linux-mint-themes-snap/releases/download/LMTS-22.1/LMT-22.1-snapcraft-files.tar.xz
+    override-build: |
+      snapcraftctl build
+      pwd
+      ls -l
+      mkdir -p $CRAFT_PART_INSTALL/share/
+      mv -f $CRAFT_PART_INSTALL/gtk-themes/gtk2 $CRAFT_PART_INSTALL/share/
+    stage:
+      - share/gtk2/
+  gtk-3-themes:
+    plugin: dump
+    source: https://github.com/Kyuyrii/linux-mint-themes-snap/releases/download/LMTS-22.1/LMT-22.1-snapcraft-files.tar.xz
+    override-build: |
+      snapcraftctl build
+      pwd
+      ls -l
+      mkdir -p $CRAFT_PART_INSTALL/share/
+      mv -f $CRAFT_PART_INSTALL/gtk-themes/themes $CRAFT_PART_INSTALL/share/
+    stage:
+      - share/themes/
